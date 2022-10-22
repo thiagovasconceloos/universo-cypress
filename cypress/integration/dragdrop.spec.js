@@ -1,7 +1,16 @@
+
+describe('Drag and Drop', ()=>{
+
+before(()=>{
+
+    cy.visit('https://training-wheels-qaninja.herokuapp.com/drag_and_drop')
+
+})
+
 it('Deve arrastar o Cypress para a caixinha do Node',()=>{
 
 
-    cy.visit('https://training-wheels-qaninja.herokuapp.com/drag_and_drop')
+   
 
     const dataTransfer = new DataTransfer();
 
@@ -18,8 +27,7 @@ it('Deve arrastar o Cypress para a caixinha do Node',()=>{
 it('Deve arrastar o Robot para a caixinha do Python ',()=>{
 
 
-    cy.visit('https://training-wheels-qaninja.herokuapp.com/drag_and_drop')
-
+   
     const dataTransfer = new DataTransfer();
 
     cy.get('img[alt="Robot Framework"]').trigger('dragstart',{dataTransfer})
@@ -30,4 +38,5 @@ it('Deve arrastar o Robot para a caixinha do Python ',()=>{
 
 
 
+})     
 })
