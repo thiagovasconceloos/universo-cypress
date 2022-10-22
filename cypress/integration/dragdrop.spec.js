@@ -3,7 +3,7 @@ describe('Drag and Drop', ()=>{
 
 before(()=>{
 
-    cy.visit('https://training-wheels-qaninja.herokuapp.com/drag_and_drop')
+    cy.visit('/drag_and_drop')
 
 })
 
