@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "cypress": "^9.4.1"
+    "cypress": "^9.4.1",
+    "cypress-real-events": "^1.7.2"
   },
   "name": "universo-cypress",
   "version": "1.0.0",
